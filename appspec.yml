@@ -1,9 +1,9 @@
 version: 0.0
-os: windows
+os: linux
 files:
   - source: \
-    destination: C:\inetpub\wwwroot
+    destination: /home/ec2-user/express-app
 hooks:
   BeforeInstall:
     - location: \before-install.bat
-      timeout: 300
+      timeout: 900
